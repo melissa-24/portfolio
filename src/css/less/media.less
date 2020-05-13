@@ -1,0 +1,63 @@
+@import 'base.less';
+
+@media @400 {
+    .app {
+        .side-bar {
+            .nav-header {
+                img {width: 3.5rem;}
+            }
+        }
+    }
+}
+
+@media @730 {
+    .app {
+        .side-bar {
+            margin: 0;
+            width: 250px;
+            padding: 0;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            .flexcolumn();
+            justify-content: flex-start;
+
+            .nav-header {
+                .flexcolumn();
+                margin: .5em 0;
+
+                img {width: 5rem;}
+
+                .nav-title {
+                    margin: .5em 0;
+
+                    h1 {margin: 1em 0;}
+                }
+            }
+            nav {
+                .flexcolumn();
+
+                p {padding: .3em 0;}
+            }
+            footer {
+                .flexcolumn();
+                margin: 4em 0 1em 0;
+                justify-content: baseline;
+            }
+        }
+        .main {
+            margin-left: 250px;
+            .flexcolumn();
+            justify-content: flex-start;
+
+            footer {display: none;}
+        }
+    }
+}
+
+@media @950 {
+    .app {
+        .side-bar {width: 350px;}
+        .main {margin-left: 350px;}
+    }
+}

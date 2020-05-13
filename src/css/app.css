@@ -1,0 +1,375 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexcolumnalt {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  margin: auto;
+}
+.app {
+  background-color: #e3dec4;
+}
+.app .side-bar {
+  background-color: #3e8e95;
+  border: 6px groove #cc9b51;
+  color: #e3dec4;
+}
+.app .side-bar .nav-header {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+.app .side-bar .nav-header img {
+  width: 2.5rem;
+}
+.app .side-bar .nav-header .nav-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.8em;
+}
+.app .side-bar .nav-header .nav-title h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.app .side-bar .nav-header .nav-title h2 {
+  font-size: 1em;
+}
+.app .side-bar .nav-header .nav-title h6 {
+  font-size: 0.7em;
+}
+.app .side-bar nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.app .side-bar nav a {
+  color: #070c14;
+  text-decoration: none;
+  padding: 0.5em 1.5em;
+  border: 4px groove #ab7c74;
+  margin: 0.3em;
+}
+.app .side-bar nav a:hover {
+  background-color: #ab7c74;
+}
+.app .side-bar nav p {
+  padding: 0.3em 1.5em;
+}
+.app .side-bar footer {
+  display: none;
+}
+.app .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app .main .profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app .main .profile-wrapper .profile-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4px groove #ab7c74;
+  margin-bottom: 1em;
+}
+.app .main .profile-wrapper .profile-header h1 {
+  font-size: 2em;
+  padding: 0.5em 0.1em;
+}
+.app .main .profile-wrapper .profile-header h2 {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0 0.1em 0.5em 0.1em;
+}
+.app .main .profile-wrapper .profile-header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.app .main .profile-wrapper .profile-header nav a {
+  padding: 0.5em;
+  color: #3e8e95;
+  text-decoration: none;
+}
+.app .main .profile-wrapper .profile-header nav a:hover {
+  background-color: #070c14;
+}
+.app .main .profile-wrapper .section-header {
+  border-bottom: 6px groove #cc9b51;
+  margin: 1em;
+  padding: 0.5em;
+}
+.app .main .profile-wrapper .section-header h3 {
+  color: #070c14;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 0.5em;
+}
+.app .main .profile-wrapper .section-header h3 img {
+  height: 1.5em;
+  padding: 0 1em;
+  margin: 0 0.5em;
+}
+.app .main .profile-wrapper .profile-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app .main .profile-wrapper .profile-text p {
+  margin: 0.5em;
+  padding: 0.1em 0.3em 0.2em 0.3em;
+}
+.app .main .profile-wrapper .profile-text ul li {
+  padding: 0.5em;
+}
+.app .main .profile-wrapper .profile-text ul li b {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.app .main .profile-wrapper .profile-text ul li a {
+  text-decoration: none;
+  color: #070c14;
+}
+.app .main .profile-wrapper .profile-text ul li a:hover {
+  background-color: #ab7c74;
+}
+.app .main footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px groove #ab7c74;
+  margin: 0.5em;
+  width: 95%;
+  padding: 0.5em;
+}
+@media only screen and (min-width: 400px) {
+  .app .side-bar .nav-header img {
+    width: 3.5rem;
+  }
+}
+@media only screen and (min-width: 730px) {
+  .app .side-bar {
+    margin: 0;
+    width: 250px;
+    padding: 0;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .app .side-bar .nav-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0;
+  }
+  .app .side-bar .nav-header img {
+    width: 5rem;
+  }
+  .app .side-bar .nav-header .nav-title {
+    margin: 0.5em 0;
+  }
+  .app .side-bar .nav-header .nav-title h1 {
+    margin: 1em 0;
+  }
+  .app .side-bar nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .app .side-bar nav p {
+    padding: 0.3em 0;
+  }
+  .app .side-bar footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4em 0 1em 0;
+    justify-content: baseline;
+  }
+  .app .main {
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .app .main footer {
+    display: none;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .app .side-bar {
+    width: 350px;
+  }
+  .app .main {
+    margin-left: 350px;
+  }
+}

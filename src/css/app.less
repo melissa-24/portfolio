@@ -1,0 +1,136 @@
+@import './less/reset.less';
+@import './less/base.less';
+
+
+.app {
+    background-color: @mainbg;
+    .side-bar {
+        background-color: @navbg;
+        border: @border;
+        color: @mainbg;
+        
+        .nav-header {
+            .flexrow();
+            padding: .5em;
+            justify-content: center;
+            align-items: center;
+
+            img {width: 2.5rem;}
+            
+            .nav-title {
+                .flexcolumn();
+                padding: 0 .8em;
+                h1 {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+                h2 {font-size: 1em;}
+                h6 {font-size: .7em;}
+            }
+        }
+        nav {
+            .flexrow();
+            justify-content: center;
+            align-items: center;
+
+            a {
+                color: @font;
+                text-decoration: none;
+                padding: .5em 1.5em;
+                border: @altborder;
+                margin: .3em;
+
+                &:hover {background-color: @alt;}
+            }
+
+            p {padding: .3em 1.5em;}
+        }
+        footer {display: none;}
+    }
+    .main {
+        .flexcolumn();
+
+        .profile-wrapper {
+            .flexcolumn();
+
+            .profile-header {
+                .flexcolumn();
+                border-bottom: @altborder;
+                margin-bottom: 1em;
+
+                h1 {
+                    font-size: 2em;
+                    padding: .5em .1em;
+                }
+                h2 {
+                    font-size: 1.2em;
+                    text-align: center;
+                    padding: 0 .1em .5em .1em;
+                }
+                nav {
+                    .flexrow();
+                    margin-bottom: 1em;
+                    a {
+                        padding: .5em;
+                        color: @navbg;
+                        text-decoration: none;
+    
+                        &:hover {background-color: @font;}
+                    }
+                }
+            }
+            .section-header {
+                border-bottom: @border;
+                margin: 1em;
+                padding: .5em;
+
+                h3 {
+                    color: @font;
+                    font-size: 1.1em;
+                    font-weight: 500;
+                    padding: .5em;
+
+                    img {
+                        height: 1.5em;
+                        padding: 0 1em;
+                        margin: 0 .5em;
+                    }
+
+                }
+            }
+            .profile-text {
+                .flexcolumn();
+
+                p {
+                    margin: .5em;
+                    padding: .1em .3em .2em .3em;
+                }
+                ul {
+                    li {
+                        padding: .5em;
+
+                        b {
+                            font-size: 1.2em;
+                            font-weight: bold;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: @font;
+
+                            &:hover {background-color: @alt;}
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            .flexcolumn();
+            border: @altborder;
+            margin: .5em;
+            width: 95%;
+            padding: .5em;
+        }
+    }
+}
+
+@import './less/media.less';
