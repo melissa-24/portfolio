@@ -291,6 +291,9 @@ body {
 .app .main .profile-wrapper .profile-text ul li a:hover {
   background-color: #ab7c74;
 }
+.app .main .profile-wrapper .profile-text .project-card {
+  width: 300px;
+}
 .app .main footer {
   display: flex;
   flex-direction: column;
