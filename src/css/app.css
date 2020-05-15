@@ -191,6 +191,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .app .side-bar nav a {
   color: #070c14;
@@ -256,13 +257,13 @@ body {
   margin: 1em;
   padding: 0.5em;
 }
-.app .main .profile-wrapper .section-header h3 {
+.app .main .profile-wrapper .section-header h2 {
   color: #070c14;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 500;
   padding: 0.5em;
 }
-.app .main .profile-wrapper .section-header h3 img {
+.app .main .profile-wrapper .section-header h2 img {
   height: 1.5em;
   padding: 0 1em;
   margin: 0 0.5em;
@@ -291,8 +292,44 @@ body {
 .app .main .profile-wrapper .profile-text ul li a:hover {
   background-color: #ab7c74;
 }
+.app .main .profile-wrapper .profile-text h3 {
+  font-size: 1.1em;
+  text-align: center;
+}
 .app .main .profile-wrapper .profile-text .project-card {
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+  background-color: #070c14;
+  border: 4px groove #ab7c74;
+  padding: 0.5em;
+}
+.app .main .profile-wrapper .profile-text .project-card h4 {
+  font-size: 1em;
+  font-weight: 700;
+  color: #ab7c74;
+  text-align: center;
+  padding: 0.5em;
+}
+.app .main .profile-wrapper .profile-text .project-card img {
+  width: 18em;
+  border: 4px groove #e3dec4;
+}
+.app .main .profile-wrapper .profile-text .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+}
+.app .main .profile-wrapper .profile-text .list ul {
+  padding: 0.2em;
+}
+.app .main .profile-wrapper .profile-text .list ul li b {
+  font-weight: bold;
+  font-style: italic;
 }
 .app .main footer {
   display: flex;
@@ -304,9 +341,16 @@ body {
   width: 95%;
   padding: 0.5em;
 }
+.app .main footer p {
+  margin: 0.5em;
+  padding: 0.2em;
+}
 @media only screen and (min-width: 400px) {
   .app .side-bar .nav-header img {
     width: 3.5rem;
+  }
+  .app .main .profile-wrapper .profile-text .project-card img {
+    width: 22em;
   }
 }
 @media only screen and (min-width: 730px) {
@@ -356,6 +400,10 @@ body {
     margin: 4em 0 1em 0;
     justify-content: baseline;
   }
+  .app .side-bar footer p {
+    margin: 0.5em;
+    padding: 0.2em;
+  }
   .app .main {
     margin-left: 250px;
     display: flex;
@@ -363,6 +411,22 @@ body {
     justify-content: center;
     align-items: center;
     justify-content: flex-start;
+  }
+  .app .main .profile-wrapper .profile-text {
+    padding: 1em;
+  }
+  .app .main .profile-wrapper .profile-text .project-card img {
+    width: 25em;
+  }
+  .app .main .profile-wrapper .profile-text .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5em;
+  }
+  .app .main .profile-wrapper .profile-text .list ul {
+    padding: 0.5em 2em;
+    margin: 0 2em;
   }
   .app .main footer {
     display: none;
@@ -374,5 +438,8 @@ body {
   }
   .app .main {
     margin-left: 350px;
+  }
+  .app .main .profile-wrapper .profile-text .project-card img {
+    width: 30em;
   }
 }

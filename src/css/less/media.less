@@ -7,6 +7,15 @@
                 img {width: 3.5rem;}
             }
         }
+        .main {
+            .profile-wrapper {
+                .profile-text {
+                    .project-card {
+                        img {width: 22em;}
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -43,12 +52,35 @@
                 .flexcolumn();
                 margin: 4em 0 1em 0;
                 justify-content: baseline;
+
+                p {
+                    margin: .5em;
+                    padding: .2em;
+                }
             }
         }
         .main {
             margin-left: 250px;
             .flexcolumn();
             justify-content: flex-start;
+
+            .profile-wrapper {
+                .profile-text {
+                    padding: 1em;
+                    .project-card {
+                        img {width: 25em;}
+                    }
+                    .list {
+                        .flexrow();
+                        padding: .5em;
+
+                        ul {
+                            padding: .5em 2em;
+                            margin: 0 2em;
+                        }
+                    }
+                }
+            }
 
             footer {display: none;}
         }
@@ -58,6 +90,15 @@
 @media @950 {
     .app {
         .side-bar {width: 350px;}
-        .main {margin-left: 350px;}
+        .main {
+            margin-left: 350px;
+            .profile-wrapper {
+                .profile-text {
+                    .project-card {
+                        img {width: 30em;}
+                    }
+                }
+            }
+        }
     }
 }

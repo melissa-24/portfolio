@@ -20,6 +20,9 @@
   .app .side-bar .nav-header img {
     width: 3.5rem;
   }
+  .app .main .profile-wrapper .profile-text .project-card img {
+    width: 22em;
+  }
 }
 @media only screen and (min-width: 730px) {
   .app .side-bar {
@@ -68,6 +71,10 @@
     margin: 4em 0 1em 0;
     justify-content: baseline;
   }
+  .app .side-bar footer p {
+    margin: 0.5em;
+    padding: 0.2em;
+  }
   .app .main {
     margin-left: 250px;
     display: flex;
@@ -75,6 +82,22 @@
     justify-content: center;
     align-items: center;
     justify-content: flex-start;
+  }
+  .app .main .profile-wrapper .profile-text {
+    padding: 1em;
+  }
+  .app .main .profile-wrapper .profile-text .project-card img {
+    width: 25em;
+  }
+  .app .main .profile-wrapper .profile-text .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5em;
+  }
+  .app .main .profile-wrapper .profile-text .list ul {
+    padding: 0.5em 2em;
+    margin: 0 2em;
   }
   .app .main footer {
     display: none;
@@ -86,5 +109,8 @@
   }
   .app .main {
     margin-left: 350px;
+  }
+  .app .main .profile-wrapper .profile-text .project-card img {
+    width: 30em;
   }
 }
