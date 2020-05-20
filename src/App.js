@@ -11,7 +11,7 @@ function App() {
     <div className="app">
       <div className="side-bar">
         <div className="nav-header">
-          <img src="http://images.craftsnherbs.com/melissa.jpg" alt="Melissa" />
+          <img src="https://images.craftsnherbs.com/melissa.jpg" alt="Melissa" />
           <div className="nav-title">
           <h1>Melissa Longenberger</h1>
           <h2>Web Developer</h2>

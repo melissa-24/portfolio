@@ -14,7 +14,7 @@ function Skills() {
         </nav>
       </div>
       <div className="section-header" id="skills">
-        <h2>Skills<a href="#top"><img src="http://images.craftsnherbs.com/top.jpg" /></a></h2>
+        <h2>Skills<a href="#top"><img src="https://images.craftsnherbs.com/top.jpg" /></a></h2>
       </div>
       <div className="profile-text">
         <div className="list">
@@ -33,7 +33,7 @@ function Skills() {
         </div>
       </div>
       <div className="section-header" id="history">
-        <h2>Work History<a href="#top"><img src="http://images.craftsnherbs.com/top.jpg" /></a></h2>
+        <h2>Work History<a href="#top"><img src="https://images.craftsnherbs.com/top.jpg" /></a></h2>
       </div>
       <div className="profile-text">
         <div className="list">
@@ -46,7 +46,7 @@ function Skills() {
         </div>
       </div>
       <div className="section-header" id="education">
-        <h2>Education<a href="#top"><img src="http://images.craftsnherbs.com/top.jpg" /></a></h2>
+        <h2>Education<a href="#top"><img src="https://images.craftsnherbs.com/top.jpg" /></a></h2>
       </div>
       <div className="profile-text">
         <div className="list">
