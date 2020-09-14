@@ -24,9 +24,10 @@ function App() {
         <Link to="/projects">Projects</Link>
         <Link to="/resume">Resume</Link>
         <Link to="/contact">Contact</Link>
+        <Link to="/blog">Blog</Link>
         </nav>
         <footer>
-          <p>Last updated 5/2020</p>
+          <p>Last updated 8/2020</p>
           <p>(c) Copyright 2020</p>
         </footer>
       </div>
@@ -41,6 +42,10 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
+          <Route path="/blog" component={() => {
+            window.location.href = 'http://localhost:3000';
+            return null;
+          }}/>
           <Route path="/" component={Home} />
         </Switch>
         <footer>

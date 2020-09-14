@@ -16,16 +16,19 @@ function Contact() {
             <b>Phone: </b><a href="tel:1-570-221-9892">570-221-9892</a>
           </li>
           <li>
-              <b>LinkedIn: </b><a href="https://www.linkedin.com/in/melissa-longenberger/">My Profile on LinkedIn</a>
+              <b>LinkedIn: </b><a href="https://www.linkedin.com/in/melissa-longenberger/" target="_blank">My Profile on LinkedIn</a>
           </li>
           <li>
-              <b>GitHub (Personal): </b><a href="https://github.com/melissa-24">Personal GitHub Portfolio</a>
+              <b>GitHub (Personal): </b><a href="https://github.com/melissa-24" target="_blank">Personal GitHub Portfolio</a>
           </li>
           <li>
-              <b>GitHub (Business): </b><a href="https://github.com/beedev-itservices">Main Business GitHub</a>
+              <b>GitHub (Business): </b><a href="https://github.com/beedev-itservices" target="_blank">Main Business GitHub</a>
             </li>
             <li>
-                <b>GitHub (Other Business): </b><a href="https://github.com/BeeDev-IT-Services-Coding-DoJo">Business GitHub focused on learning</a>
+                <b>GitHub (Other Business): </b><a href="https://github.com/BeeDev-IT-Services-Coding-DoJo" target="_blank">Business GitHub focused on learning</a>
+            </li>
+            <li>
+              <b>Business Website: </b><a href="https://beedev-itservices.com" target="_blank">BeeDev IT Services Website</a>
             </li>
         </ul>
       </div>

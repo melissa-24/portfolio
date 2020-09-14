@@ -36,6 +36,10 @@ function Projects() {
           <h4>A Web Developers Guide Site - Still adding Contributors and content</h4>
           <a href="https://react-help-guide.netlify.app/" target="_blank"><img src="https://images.craftsnherbs.com/portfolio/guide.jpg" /></a>
         </div>
+        <div className="project-card">
+          <h4>1st API build with working React App showing CRUD</h4>
+          <a href="https://create-user-app.vercel.app/" target="_blank">Image coming soon</a>
+        </div>
       </div>
       <div className="section-header" id="past">
           <h2>Past Projects<a href="#top"><img src="https://images.craftsnherbs.com/top.jpg" /></a></h2>
