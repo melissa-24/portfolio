@@ -1,0 +1,87 @@
+/* 
+colors
+#E9B67F
+#EEC67F
+#F0D199
+#F6E6A7
+*/
+nav {
+    margin: 1em;
+    z-index: 10;
+}
+.hex:before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #EEC67F;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+    transition: all .3s ease;
+    left: 0px;
+}
+.hex {
+    float: left;
+    margin-left: -3px;
+    margin-top: 22px;
+    width: 104px;
+    height: 60px;
+    background-color: #EEC67F;
+    position: relative;
+    transition: all .3s ease;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.hex:after {
+    content: " ";
+    width: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid #EEC67F;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    transition: all .3s ease;
+    left: 0px;
+}
+.hex_row {
+    clear: left;
+}
+.even {
+    margin-top: 33px;
+    margin-left: 51px;
+    margin-bottom: 11px;
+}
+.hex:hover > .sub_hex {
+    opacity: 1;
+    visibility: visible;
+}
+.hex:hover > .sub_hex:hover {
+    opacity: 1;
+    visibility: visible;
+}
+.sub_hex {
+    position: absolute;
+    left: 110px;
+    top: 0px;
+    margin-top: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+.sub_bottom {
+    left: 57px;
+    top: 93px;
+}
+.sub_top {
+    left: 57px;
+    top: -93px;
+}
+.hex:hover {
+    opacity: 1;
+}
+.hex:hover > .hex {
+    opacity: .5;
+}
+.text {
+    margin-left: 20px;
+}
