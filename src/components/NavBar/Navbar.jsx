@@ -11,36 +11,36 @@ export default function Navbar({ currentPath }) {
     
     return (
         <nav>
-            <div className="hex hex_row">
+            <Link to="/" className="hex hex_row">
                 <span className="text">Home</span>
-            </div>
+            </Link>
             <div className="hex hex_row even">
                 <span className="text">Projects</span>
-                <div className="sub_hex hex sub_top">
+                <Link to="/current" className="sub_hex hex sub_top">
                     <span className="text">Current</span>
-                </div>
+                </Link>
                 <div className="sub_hex hex">
                     <span className="text">All</span>
-                    <div className="sub_hex hex sub_top">
-                    <span className="text">Front-End</span>
+                    <Link to="/frontend" className="sub_hex hex sub_top">
+                        <span className="text">Front-End</span>
+                    </Link>
+                    <Link to="/backend" className="sub_hex hex">
+                        <span className="text">Back-End</span>
+                    </Link>
+                    <Link to="/fullstack" className="sub_hex hex sub_bottom">
+                        <span className="text">Full Stack</span>
+                    </Link>
                 </div>
-                <div className="sub_hex hex">
-                    <span className="text">Back-End</span>
-                </div>
-                <div className="sub_hex hex sub_bottom">
-                    <span className="text">Full Stack</span>
-                </div>
-                </div>
-                <div className="sub_hex hex sub_bottom">
+                <Link to="/past" className="sub_hex hex sub_bottom">
                     <span className="text">Past</span>
-                </div>
+                </Link>
             </div>
-            <div className="hex hex_row">
+            <Link to="/resume" className="hex hex_row">
                 <span className="text">Resume</span>
-            </div>
-            <div className="hex hex_row even">
+            </Link>
+            <Link to="/contact" className="hex hex_row even">
                 <span className="text">Contact</span>
-            </div>
+            </Link>
         </nav>
     );
 };

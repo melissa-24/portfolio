@@ -32,6 +32,7 @@ nav {
     transition: all .3s ease;
     opacity: 0.5;
     cursor: pointer;
+    text-decoration: none;
 }
 .hex:after {
     content: " ";
@@ -84,4 +85,7 @@ nav {
 }
 .text {
     margin-left: 20px;
+    text-decoration: none;
+    color: #2e2e2e;
+    line-height: 3.5;
 }

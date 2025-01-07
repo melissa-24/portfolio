@@ -1,4 +1,4 @@
-// FOOTER COMPONTENT //
+// FOOTER COMPONENT //
 
 // IMPORT REACT MAGIC
 import { Link } from "react-router-dom";
